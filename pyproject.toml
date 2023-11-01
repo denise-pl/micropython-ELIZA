@@ -1,0 +1,26 @@
+[project]
+name = "micropython-eliza"
+version = "0.1.0"
+authors = [
+  { name="Szymon Jessa", email="szymon.coding@gmail.com" },
+]
+description = "ELIZA chatbot for MicroPython. Based on 'ELIZA' by Joseph Weizenbaum, 1966."
+keywords = ["micropython", "ELIZA", "chatbot", "nlp", "ai"]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: Implementation :: MicroPython",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Communications :: Chat",
+    "Natural Language :: English"
+]
+
+[project.urls]
+"GitHub" = "https://github.com/denise-pl/micropython-ELIZA"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
