@@ -22,16 +22,13 @@ python -m micropython_eliza.demo
 
 ## How to use
 
-See the [src/micropython_eliza/chat.py](chat.py) file:
-
 ```
 import sys
-from micropython_eliza.identities import eliza
+from micropython_eliza import eliza
 
 USERNAME_IN_CHAT = "YOU"
 
-# Enable printing info and debug messages
-agent = eliza.create(log_info=print, log_debug=print)
+agent = eliza.create()
 print("\n<press enter with no message to exit>")
 print(f"{agent.name()}: {agent('')}")
 print(f"{USERNAME_IN_CHAT}: ")
@@ -40,4 +37,9 @@ while msg:
     print(f"{agent.name()}: {agent(msg)}")
     print(f"{USERNAME_IN_CHAT}: ")
     msg = sys.stdin.readline().strip()
+```
+
+To enable printing info and debug messages, provide log handlers, e.g.:
+```
+agent = eliza.create(log_info=print, log_debug=print)
 ```
