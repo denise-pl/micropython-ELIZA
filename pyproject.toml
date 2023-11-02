@@ -20,6 +20,8 @@ classifiers = [
 
 [project.urls]
 "GitHub" = "https://github.com/denise-pl/micropython-ELIZA"
+"Demo" = "https://www.szymonjessa.com/eliza"
+
 
 [build-system]
 requires = ["hatchling"]
